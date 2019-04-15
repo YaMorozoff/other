@@ -1,0 +1,339 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 97%;
+}
+body{
+  background-color:rgb(245, 245, 245);
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+  color: #597da3;
+}
+p{
+
+  padding: 3px;
+  color:grey;
+}
+
+button{
+  text-decoration: none;
+  cursor: pointer;
+  background-color:rgb(235, 240, 245);
+}
+button:hover{
+  background-color:rgb(230, 235, 245)
+}
+.header{
+  background-color: rgba(73, 115, 171, 1);
+  width: 100%;
+  height: 42px;
+}
+.headerCenter{
+background-color: inherit;
+margin: auto;
+width: 960px;
+height: inherit;
+}
+.logoHeader{
+  background-color: inherit;
+  width: 172px;
+  height: inherit;
+  float: left;
+}
+.logo{
+  display: block;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.searchHeader{
+  background-color: inherit;
+  height: inherit;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+
+}
+.searchHeader input{
+  background-color: rgba(34, 75, 122, 1);
+  outline: 0;
+  border: 0;
+  height: 100%;
+  padding: 3px;
+  width: 200px;
+  height: auto;
+}
+.searchHeader input[type="search"]{
+  color: #597da3;
+}
+input::-webkit-input-placeholder { color: rgb(134, 161, 191); }
+
+.borderLupa{
+  background-color: rgba(34, 75, 122, 1);
+  border-radius: 25px;
+  outline: 0;
+  border: 0;
+  height: 100%;
+  padding: 3px;
+  width: 230px;
+  height: 21px;
+  display: flex;
+  align-items: center;
+}
+
+.bellHeader{
+background-color: inherit;
+float: left;
+width: 50px;
+cursor: pointer;
+height: 100%;
+display: flex ;
+justify-content: center;
+align-items: center;
+}
+.bellHeader:hover{
+  background-color:rgb(50, 90, 140);
+}
+.headPlayer{
+background-color: inherit;
+height: 100%;
+width: 310px;
+float: left;
+}
+.headPlayer:hover{
+  background-color: rgb(50, 90, 140);
+}
+
+.headMenu{
+background-color: inherit;
+height: 100%;
+width: 92px;
+float: right;
+}
+.headMenu:hover{
+  background-color: rgb(50, 90, 140);
+}
+.headMenuName{
+  float: left;
+  height: 100%;
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+}
+.headMenuPhoto{
+  float: left;
+  height: 100%;
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+}
+
+.headMenuArrow{
+  float: right;
+  height: 100%;
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+}
+ .headMenuArrow1{
+   width: 5px;
+   height: 5px;
+   border-top: 1.5px solid #86a1bf;
+   border-right: 1.5px solid #86a1bf;
+   transform: rotate(135deg);
+ }
+ .hiddenMenu{
+position: absolute;
+visibility:hidden;
+width: 160px;
+height: auto;
+top: 55px;
+background: #fff;
+z-index: 800;
+border: 1px solid #c5d0db;
+padding: 4px 0;
+border-radius: 4px;
+box-shadow: 0 1px 3px rgba(0,0,0,.1);
+}
+.hiddenMenuA{
+  border-radius:5px;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  color: #2a5885;
+}
+
+.hrm{
+  margin: 4px 13px;
+  border-top: 1px solid #dbe4ec;
+}
+.hiddenMenu a{
+text-decoration: none;
+cursor: pointer;
+}
+.hiddenMenu a:hover{
+background-color:rgb(230, 235, 245);
+}
+.centerPage{
+  background-color: inherit;
+  margin: auto;
+  width: 960px;
+  height:100%;
+  padding:15px;
+}
+.leftPageMenu{
+  float: left;
+  width: 16%
+}
+.mainPage{
+float:right;
+width: 82%;
+padding-left: 15px;
+padding-bottom: 15px;
+}
+.leftPageMenu a:hover{
+background-color:rgb(230, 235, 245);
+}
+.mainPageLeft{
+  background-color: inherit;
+  float: left;
+  width: 30%;
+  margin-bottom: 15px;
+
+}
+.mainBoxes{
+  position: relative;
+  background-color: white;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+  font-family: inherit;
+  font-size: 100%;
+}
+.mainPageRight{
+  background-color: inherit;
+  float: right;
+  width: 68%;
+  padding-left:inherit;
+  padding-bottom:inherit;
+}
+.twoButtons{
+  background-color: inherit;
+  padding-top: 15px;
+}
+.bottomPhotoboxButtonLeft{
+  border-radius: 5px;
+  border:0;
+  width: 76%;
+  height: 100%;
+  padding: 7px;
+  font-size: 100%;
+  outline: 0;
+  color: #597da3;
+}
+.bottomPhotoboxButtonRight{
+  border-radius: 5px;
+  border:0;
+  height: 100%;
+  width: 20%;
+  padding: 6px;
+}
+
+.status{
+ border-radius:5px;
+ padding: 5px;
+ cursor: pointer;
+}
+.statusPage{
+  position: absolute;
+  width: 105%;
+  height: 50px;
+  z-index: 600;
+  display:none;
+  background-color: white;
+  box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+}
+.status:hover{
+
+  background-color:rgb(245, 245, 245);
+}
+
+#pageName{
+  color: black;
+  font-size: 150%
+}
+.aboutMe{
+display: flex ;
+padding-top: 10px;
+line-height: 150%;
+border-top: 1px solid #e7e8ec;
+}
+.aboutMe1{
+  padding-right: 21%;
+}
+.aboutMe1 a {
+  display: flex;
+  padding: 3px;
+}
+
+.aboutMe2{
+  display: none;
+  padding-top: 10px;
+  line-height: 150%;
+}
+.aboutMe21{
+   border-top: 1px solid #e7e8ec;
+   padding-bottom: 10px;
+}
+
+.hrm1{
+  border-bottom: none;
+  position: relative;
+  margin: -11px 0 4px;
+}
+.hrm1Text{
+padding-bottom: 4px;
+padding-right: 7px;
+background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.avaMenu{
+  position: absolute;
+  visibility: visible;
+  z-index: 100;
+  height: 50px;
+  width: 87.5%;
+  background-color: red;
+}*/
