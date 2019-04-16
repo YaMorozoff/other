@@ -389,27 +389,22 @@ color:black;
   color: #42648b;
 }
 
-#friendsText{
+#boxHeadText{
   color: black;
 }
 .friends{
   margin-bottom: 15px;
 }
-.friends1{
+.boxHead{
  padding: 15px 0px 0px 15px;
 }
-.friends2{
-  padding: 15px 0px 0px 15px;
 
-}
-.onlineFriends{
+.boxHeadBorder{
   border-top: 1px solid #e7e8ec;
   padding-bottom:15px;
 
 }
-.onlineFriends1{
-  padding: 15px 0px 0px 15px;
-}
+
 .friendCell{
   display: inline-block;
   padding-right: 15px;
@@ -422,7 +417,16 @@ color:black;
 display: block;
 text-align: center;
 }
-#friendsUpdate{
+#boxHeadRight{
   float: right;
   padding-right: 15px;
+}
+.photoCell{
+  display: inline-block;
+  padding-right: 3px;
+}
+.photosCell{
+  text-align: center;
+  padding-right: 10px;
+  padding-bottom: 15px;
 }
