@@ -65,8 +65,9 @@ function headMenu(){
 
 
 function status() {
-  var statusPage = document.getElementsByClassName('statusPage')[0];
+  var statusPage = document.getElementById('statusPage');
   var status = document.getElementsByClassName('status')[0];
+  alert(statusPage);
   statusPage.style.display = 'block';
   document.addEventListener('click', function(event) {
     if (!status.contains(event.target))
@@ -78,7 +79,7 @@ function status() {
 
 
 function setStatus() {
-  var statusPage = document.getElementsByClassName('statusPage')[0];
+  var statusPage = document.getElementById('statusPage');
   var status = document.getElementsByClassName('status')[0];
   var statusMs = document.getElementsByClassName('statusMs')[0];
   var text = document.getElementById('input');
