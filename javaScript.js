@@ -38,7 +38,7 @@ function imgbell(){
     {
     img.src = 'images/blackbell.png';
     div.style.background = "";
-    menu.style.visibility = '';  
+    menu.style.visibility = '';
   }
   });
 }
