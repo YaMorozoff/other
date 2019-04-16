@@ -2,14 +2,17 @@
 function changeColor() {
   var a = document.getElementById('inputHeader');
   var b = document.getElementsByClassName('borderLupa')[0];
+  var menu = document.getElementsByClassName('hiddenSearchMenu')[0];
   a.style.background = 'white';
   b.style.background = 'white';
+  menu.style.visibility = 'visible'
 
 
   document.addEventListener('click', function(event) {
     if (!a.contains(event.target) && !b.contains(event.target)){
       a.style.background="";
       b.style.background="";
+        menu.style.visibility = ''
     }
 
   });
@@ -17,13 +20,16 @@ function changeColor() {
 function imgbell(){
     var img = document.getElementById('swichbells');
     var div = document.getElementsByClassName('bellHeader')[0];
+    var menu = document.getElementsByClassName('events')[0];
     if (div.style.backgroundColor != 'rgb(34, 75, 122)' ) {
         div.style.backgroundColor = 'rgb(34, 75, 122)' ;
         img.src = 'images/whitebell.png' ;
+        menu.style.visibility = 'visible';
     }
         else {
             div.style.backgroundColor = '';
             img.src = 'images/blackbell.png' ;
+            menu.style.visibility = '';
         }
 
 
@@ -32,6 +38,7 @@ function imgbell(){
     {
     img.src = 'images/blackbell.png';
     div.style.background = "";
+    menu.style.visibility = '';  
   }
   });
 }
