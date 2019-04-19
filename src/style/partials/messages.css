@@ -1,0 +1,55 @@
+.mainMessagePage{
+  position: absolute;
+  background-color: white;
+  height: auto;
+  box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+  width:540px;
+  left: 50%;
+  margin-left:-308px;
+  margin-top: 106px;
+  margin-bottom:48px;
+}
+.mainMessageRightMenu{
+  float:right;
+  background-color: white;
+  height: auto;
+  min-height: 120px;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+  width:230px;
+
+}
+.mainMessageTop{
+  border-radius: 4px;
+  background-color: white;
+  position: fixed;
+  width: 540px;
+  height: 48px;
+  box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+}
+.mainMessageBottom{
+  background-color: white;
+  position: fixed;
+  width: 540px;
+  height: 48px;
+ box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+  bottom: 0;
+}
+.mainPageFixed{
+  position: fixed;
+  z-index: 10;
+  padding-top:57px;
+  height: 100%;
+  width: 960px;
+  left: 50%;
+  margin-left:-480px;
+}
+.ggg{
+  z-index: 1;
+  position: fixed;
+  background-color:rgb(245,245,245);
+  width:550px;
+  height:25px;
+  top:42px;
+  left: 640px;
+}

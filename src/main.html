@@ -1,31 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
+  //= template/headTag.html
   <title>Yan Morozov</title>
-  <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
-  <link rel="shortcut icon" href="img/logo.ico" type="image/ico">
 </head>
 <body>
-  //= template/header.html
-  <div class="page">
-    <div class="centerPage">
-      <div class="leftPageMenu">
-        <a class="hiddenMenuA"><img id="hiddenMenuAImg"src="img/home.png" alt="">My profile</a>
-        <a class="hiddenMenuA"><img id="hiddenMenuAImg"src="img/news.png" alt="">News</a>
-        <a class="hiddenMenuA"><img id="hiddenMenuAImg"src="img/message.png" alt="">Messages</a>
-        <a class="hiddenMenuA"><img id="hiddenMenuAImg"src="img/user.png" alt="">Friends</a>
-        <a class="hiddenMenuA"><img id="hiddenMenuAImg"src="img/users.png" alt="">Communities</a>
-        <a class="hiddenMenuA"><img id="hiddenMenuAImg"src="img/photo.png" alt="">Photos</a>
-        <a class="hiddenMenuA"><img id="hiddenMenuAImg"src="img/music.png" alt="">Music</a>
-        <a class="hiddenMenuA"><img id="hiddenMenuAImg"src="img/video.png" alt="">Videos</a>
-        <a class="hiddenMenuA"><img id="hiddenMenuAImg"src="img/games.png" alt="">Games </a>
-        <div class="hrm"></div>
-        <a class="hiddenMenuA"><img src="img/coin.png" alt="" style="vertical-align:middle;padding-right:5px;">VK Pay</a>
-      </div>
-
+  <header>
+    //= template/header.html
+  </header>
       <div class="mainPage">
+        <div class="mainLeft">
+          //= template/nav.html
+        </div>
+        <div class="mainRight">
         <div class="mainPageLeft">
           <div class="mainBoxes">
 
@@ -372,10 +359,9 @@
           </div>
 
 
-          <script src="js/main.js" type="text/javascript"></script>
+          //= template/scripts.html
         </div>
       </div>
-    </div>
-  </div>
+        </div>
         </body>
         </html>

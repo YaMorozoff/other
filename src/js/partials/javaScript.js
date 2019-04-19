@@ -23,12 +23,12 @@ function imgbell(){
     var menu = document.getElementsByClassName('events')[0];
     if (div.style.backgroundColor != 'rgb(34, 75, 122)' ) {
         div.style.backgroundColor = 'rgb(34, 75, 122)' ;
-        img.src = 'images/whitebell.png' ;
+        img.src = 'img/whitebell.png' ;
         menu.style.visibility = 'visible';
     }
         else {
             div.style.backgroundColor = '';
-            img.src = 'images/blackbell.png' ;
+            img.src = 'img/blackbell.png' ;
             menu.style.visibility = '';
         }
 
@@ -36,7 +36,7 @@ function imgbell(){
   document.addEventListener('click', function(event) {
     if (!img.contains(event.target) && !div.contains(event.target))
     {
-    img.src = 'images/blackbell.png';
+    img.src = 'img/blackbell.png';
     div.style.background = "";
     menu.style.visibility = '';
   }
