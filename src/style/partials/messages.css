@@ -1,7 +1,8 @@
 .mainMessagePage{
+  display: block;
   position: absolute;
   background-color: white;
-  height: auto;
+  height: 100%;
   box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
   width:540px;
   left: 50%;
@@ -20,12 +21,14 @@
 
 }
 .mainMessageTop{
+  padding: 10px;
   border-radius: 4px;
   background-color: white;
   position: fixed;
-  width: 540px;
-  height: 48px;
+  width: 520px;
+  height: 28px;
   box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+  display: inline-block;
 }
 .mainMessageBottom{
   background-color: white;
@@ -52,4 +55,41 @@
   height:25px;
   top:42px;
   left: 640px;
+}
+#lupa{
+float: left;
+padding: 5px;
+}
+#add{
+  float: right;
+  padding: 5px 10px 5px 5px;
+}
+.mainMessageTop_1{
+  display:block;
+}
+#inputMs{
+  float:left;
+  margin: 6px 5px 0px 5px;
+  border:0;
+  outline: 0;
+}
+
+.dialog{
+  display: inline-block;
+  width:490px;
+  padding: 10px 30px 10px 20px;
+  border:1px;
+  border-color: black;
+}
+.dialog:hover{
+  background-color: rgb(250,250,250);
+}
+#dialogPhoto{
+  border-radius: 50px;
+}
+.dialogPhoto{
+  float: left;
+}
+.dialogDate{
+  float: right;
 }
