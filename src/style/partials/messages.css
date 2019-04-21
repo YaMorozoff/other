@@ -2,13 +2,13 @@
   display: block;
   position: absolute;
   background-color: white;
-  height: 100%;
-  box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+  height: auto;
+  border: 1px solid #d7d8db;
   width:540px;
-  left: 50%;
-  margin-left:-308px;
-  margin-top: 106px;
-  margin-bottom:48px;
+  margin: auto;
+  margin-top: 105px;
+  left: -73px;
+  right:0;
 }
 .mainMessageRightMenu{
   float:right;
@@ -22,30 +22,45 @@
 }
 .mainMessageTop{
   padding: 10px;
-  border-radius: 4px;
   background-color: white;
   position: fixed;
   width: 520px;
   height: 28px;
-  box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+  border: 1px solid #d7d8db;
   display: inline-block;
 }
 .mainMessageBottom{
   background-color: white;
   position: fixed;
   width: 540px;
-  height: 48px;
- box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+  height: 28px;
+  border: 1px solid #d7d8db;
   bottom: 0;
+  padding: 10px;
 }
+#mainMessageBottom_1{
+  float: left;
+  padding-top:6px;
+}
+#mainMessageBottom_2{
+  float: right;
+  padding-top:6px;
+  padding-right:6px;
+}
+#mainMessageBottom_3{
+  float: right;
+  padding-top:2px;
+}
+
 .mainPageFixed{
   position: fixed;
   z-index: 10;
   padding-top:57px;
   height: 100%;
   width: 960px;
-  left: 50%;
-  margin-left:-480px;
+  margin: auto;
+  left: 0;
+  right:0;
 }
 .ggg{
   z-index: 1;
@@ -54,7 +69,9 @@
   width:550px;
   height:25px;
   top:42px;
-  left: 640px;
+  margin: auto;
+  left: -73px;
+  right:0;
 }
 #lupa{
 float: left;
@@ -75,21 +92,41 @@ padding: 5px;
 }
 
 .dialog{
-  display: inline-block;
-  width:490px;
-  padding: 10px 30px 10px 20px;
-  border:1px;
-  border-color: black;
+  width:540px;
+  border-top: solid 1px #e7e8ec;
 }
-.dialog:hover{
+
+.dialog a:hover{
   background-color: rgb(250,250,250);
 }
 #dialogPhoto{
   border-radius: 50px;
-}
-.dialogPhoto{
   float: left;
 }
-.dialogDate{
+#dialogDate{
   float: right;
+}
+.dialog_1{
+  padding-left: 15px;
+  float: left;
+  height: 100%;
+}
+#dialog_1_name{
+  display: flex;
+  vertical-align: top;
+  margin-bottom: 10px;
+  color: black;
+}
+#dialog_1_message{
+  display: flex;
+  vertical-align: bottom;
+}
+.dialogBox{
+  display: inline-block;
+  padding: 10px 30px 10px 20px;
+  width: 490px;
+  top: 1px;
+}
+li{
+  list-style-type: none;
 }
