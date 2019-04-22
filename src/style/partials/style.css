@@ -73,7 +73,6 @@ height: inherit;
   position: relative;
   height: 100%;
   padding: 15px;
-  overflow: hidden;
 }
 .searchHeader{
   background-color: inherit;
@@ -420,7 +419,6 @@ color:black;
     text-align: center;
     border-top: 1px solid #e7e8ec;
     max-height: 69px;
-    overflow: hidden;
 }
 .numbers{
   display: inline-block;
@@ -490,6 +488,8 @@ text-align: center;
 }
 .groupsBoxHead{
   display: block;
+  outline: 0;
+  text-decoration: none;
 }
 #groupsBoxHead{
 display: inline-block;
@@ -578,20 +578,84 @@ background-color:rgb(245, 245, 245);
 
 .avaMenu{
   position:absolute;
-  width: 206px;
-  height: 100px;
+  width: 186px;
+  height: 50px;
   background-color: red;
-  bottom: 0;
+  bottom: 18px;
   color: #fff;
-  overflow: hidden;
-opacity: 0;
-background-color: rgba(29,32,34,.7);
-transition: all 200ms ease-in-out;
-border-radius: 0 0 2px 2px;
+  opacity: 0;
+  background-color: rgba(29,32,34,.7);
+  transition: all 200ms ease-in-out;
+  border-radius: 0 0 2px 2px;
+  padding: 10px 10px 0px 10px;
 }
-.avaMenu:hover{
+.avaMenu_1{
+  display:inline-block;
+  margin-bottom:10px;
+  margin-left: 5px;
+  width: 100%;
+}
+.avaMenu_1 span{
+  width: 100%;
+  color:rgb(225, 225, 225);
+}
+.avaMenu_1:hover span{
+  color: white
+}
+.avaDelete{
+  position:absolute;
+  width: 7px;
+  height: 7px;
+  background-color: rgba(29,32,34,.7);
+  top: 15px;
+  right: 15px;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding:5px;
+  opacity: 0;
+}
+.avaDeleteX1{
+  position:relative;
+  top:-3px;
+  right: -1px;
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid rgb(245,245,245);
+  border-right: 2px solid rgb(245,245,245);
+  transform: rotate(135deg);
+}
+.avaDeleteX2{
+  position:relative;
+  top:-3px;
+  right: -1px;
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid rgb(245,245,245);
+  border-right: 2px solid rgb(245,245,245);
+  transform: rotate(-45deg);
+}
+.ava:hover .avaMenu{
   opacity: 1;
-  bottom:18px;
+  height: 80px;
+}
+.ava:hover .avaDelete{
+  opacity: 1;
+}
+.deleteMessage{
+  position: absolute;
+  top:52px;
+  right: -13px;
+  background-color: rgba(29,32,34,.7);
+  padding: 5px;
+  border-radius: 4px;
+  color: white;
+  opacity: 0;
+}
+.avaDelete:hover .deleteMessage{
+  opacity: 1;
 }
 .photo_album_1{
   background-image: url('../img/ava.jpg');
@@ -615,6 +679,10 @@ border-radius: 0 0 2px 2px;
   height: 150px;
   color: white;
   padding: 10px;
+}
+.photo_album_info{
+  position: relative;
+  top: 130px;
 }
 .photo_album_text{
   bottom: 0;
@@ -642,13 +710,18 @@ border-radius: 0 0 2px 2px;
 
 }
 .video_length span{
+  position: relative;
+  bottom: -50px;
+  right: -105px;
   color: white;
   border-radius: 4px;
   padding: 4px;
   background-color: rgba(29,32,34,.7);
- float: right;
 }
 .video_play{
+  position: relative;
+  bottom: 0px;
+  right: 14px;
   display: flex ;
   justify-content: center;
   align-items: center;
@@ -656,6 +729,9 @@ border-radius: 0 0 2px 2px;
   height: 60px;
   width: 60px;
   border-radius: 30px;
+}
+.video_play:hover{
+  background-color: rgba(29,32,34,1);
 }
 .music{
   padding: 10px 0px 0px 0px;
