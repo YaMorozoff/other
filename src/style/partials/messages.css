@@ -14,11 +14,14 @@
   float:right;
   background-color: white;
   height: auto;
-  min-height: 120px;
   border-radius: 4px;
   box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
   width:230px;
-
+  padding: 5px 0px 5px 0px;
+}
+.mainMessageRightMenu li{
+  border-left: 2px solid #4a76a8;
+  padding: 10px 20px 10px 20px;
 }
 .mainMessageTop{
   padding: 10px;
