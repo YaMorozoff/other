@@ -74,7 +74,6 @@ function headMenu(){
 function status() {
   var statusPage = document.getElementById('statusPage');
   var status = document.getElementsByClassName('status')[0];
-  alert(statusPage);
   statusPage.style.display = 'block';
   document.addEventListener('click', function(event) {
     if (!status.contains(event.target))
@@ -91,6 +90,7 @@ function setStatus() {
   var statusMs = document.getElementsByClassName('statusMs')[0];
   var text = document.getElementById('input');
   var val = text.value;
+  alert(val);
   if(val != ''){
     statusMs.innerHTML = val;
   }
